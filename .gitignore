@@ -1,3 +1,4 @@
 .git/
 http-mitm-proxy/
 node_modules/
+temp/
