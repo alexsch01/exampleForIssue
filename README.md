@@ -1,4 +1,4 @@
-Example cypress project to reproduce cypress-ntlm-auth issue: https://github.com/bjowes/cypress-ntlm-auth/issues/224
+Example cypress project to reproduce possible cypress-ntlm-auth issue: https://github.com/bjowes/cypress-ntlm-auth/issues/224
 
 ```
 git clone https://github.com/alexsch01/exampleForIssue
