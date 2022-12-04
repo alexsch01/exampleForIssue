@@ -1,9 +1,17 @@
-Example project on Linux to reproduce possible cypress issue: https://github.com/cypress-io/cypress/pull/24957
+### Example project on Linux to reproduce possible cypress issue: https://github.com/cypress-io/cypress/pull/24957
 
+1st run
 ```
 git clone https://github.com/alexsch01/exampleForIssue
 cd exampleForIssue
 npm install
+TEMP="./temp" node test.js
+cd temp
+ls
+```
+2nd and 3rd run
+```
+cd ..
 TEMP="./temp" node test.js
 cd temp
 ls
