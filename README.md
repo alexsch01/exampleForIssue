@@ -6,15 +6,12 @@ git clone https://github.com/alexsch01/exampleForIssue
 cd exampleForIssue
 npm install
 TEMP="./temp" node test.js
-cd temp
-ls
+ls ./temp
 ```
 2nd and 3rd run
 ```
-cd ..
 TEMP="./temp" node test.js
-cd temp
-ls
+ls ./temp
 ```
 On the 1st run "ls" prints out "tmp-4010-pbzUtDtmsTPz"\
 \
