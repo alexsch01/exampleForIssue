@@ -4,7 +4,7 @@ Example project on Linux to reproduce possible cypress-ntlm-auth issue: https://
 git clone https://github.com/alexsch01/exampleForIssue
 cd exampleForIssue
 npm install
-TEMP="./temp" npx cypress-ntlm run
+TEMP="./temp" node test.js
 cd temp
 ls
 ```
@@ -12,6 +12,4 @@ On the 1st run "ls" prints out "tmp-4010-pbzUtDtmsTPz"\
 \
 On the 2nd run "ls" prints out "tmp-4010-pbzUtDtmsTPz  tmp-4408-rtIRxHYP3tq6p"\
 \
-On the 3rd run "ls" prints out "tmp-4010-pbzUtDtmsTPz  tmp-4408-rtIRxHYP3tq6  tmp-4800-qxJVsVFT36tL"\
-\
-Using the normal "cypress" command instead of "cypress-ntlm" does not have this behavior
+On the 3rd run "ls" prints out "tmp-4010-pbzUtDtmsTPz  tmp-4408-rtIRxHYP3tq6  tmp-4800-qxJVsVFT36tL"
