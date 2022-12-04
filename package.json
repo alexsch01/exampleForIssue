@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "cypress": "^11.2.0",
-    "cypress-ntlm-auth": "^4.1.1"
+    "cypress": "^11.2.0"
   }
 }
