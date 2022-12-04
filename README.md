@@ -1,20 +1,18 @@
 ### Example project on Linux to reproduce possible cypress issue: https://github.com/cypress-io/cypress/pull/24957
 
-1st run
+Setup:
 ```
 git clone https://github.com/alexsch01/exampleForIssue
 cd exampleForIssue
 npm install
-TEMP="./temp" node test.js
-ls ./temp
 ```
-2nd and 3rd run
+Runs:
 ```
-TEMP="./temp" node test.js
-ls ./temp
+TEMP="./temp" node test.js > /dev/null
+ls -d ./temp/tmp*
 ```
-On the 1st run "ls" prints out "tmp-4010-pbzUtDtmsTPz"\
+On the 1st run, it prints out "./temp/tmp-6521-OK4mYL1lAZQ9"\
 \
-On the 2nd run "ls" prints out "tmp-4010-pbzUtDtmsTPz  tmp-4408-rtIRxHYP3tq6p"\
+On the 2nd run, it prints out "./temp/tmp-6521-OK4mYL1lAZQ9  ./temp/tmp-6910-EXgxvYny1JtJ"\
 \
-On the 3rd run "ls" prints out "tmp-4010-pbzUtDtmsTPz  tmp-4408-rtIRxHYP3tq6  tmp-4800-qxJVsVFT36tL"
+On the 3rd run, it prints out "./temp/tmp-6521-OK4mYL1lAZQ9  ./temp/tmp-6910-EXgxvYny1JtJ  ./temp/tmp-7294-AK3rKKGVT404"
